@@ -1,0 +1,355 @@
+2017/02/04 20:30:19 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 20:31:10 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (96)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 21:04:03 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (96)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 21:06:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "clientes".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('clientes')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('clientes')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/clientes')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=site/clientes
+---
+2017/02/04 21:06:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cClientes".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cClientes')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cClientes')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cClientes')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=site/cClientes
+---
+2017/02/04 21:08:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cClientes".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cClientes')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cClientes')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cClientes')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=site/cClientes
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=cClientes/index
+---
+2017/02/04 21:09:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cClientes".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('cClientes')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('cClientes')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/cClientes')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=site/cClientes
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=cClientes/index
+---
+2017/02/04 21:33:50 [error] [exception.CException] exception 'CException' with message 'Property "CBreadcrumbs.Inicio" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('Inicio', Array)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CClientesController), 'zii.widgets.CBr...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CBr...', Array)
+#3 C:\xampp\htdocs\yii\GClientes\protected\views\layouts\main.php(41): CBaseController->widget('zii.widgets.CBr...', Array)
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(214): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\yii\GClientes\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php(128): CController->render('index', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CClientesController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cClientes/index')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/index
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=site/login
+---
+2017/02/04 21:36:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cClientes/login')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/login
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=site/login
+---
+2017/02/04 21:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cClientes/login')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/login
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=site/login
+---
+2017/02/04 21:51:12 [error] [exception.CException] exception 'CException' with message 'Property "CRequiredValidator.messagee" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CValidator.php(177): CComponent->__set('messagee', 'Este campo es r...')
+#1 C:\xampp\htdocs\yii\framework\base\CModel.php(287): CValidator::createValidator('required', Object(LoginForm), 'username, passw...', Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(304): CModel->getValidators('Usuario')
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1514): CModel->isAttributeRequired('Usuario')
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx(Object(LoginForm), 'Usuario', Array)
+#6 C:\xampp\htdocs\yii\GClientes\protected\views\site\login.php(28): CActiveForm->labelEx(Object(LoginForm), 'Usuario')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#11 C:\xampp\htdocs\yii\GClientes\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=site/login
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=site/login
+---
+2017/02/04 22:10:03 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:12:14 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (96)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:32:53 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:35:09 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:51:55 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:51:55 [error] [php] Undefined index: foto (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:54:19 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 22:54:19 [error] [php] Undefined index: foto (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 23:41:57 [error] [php] Undefined index: ImagenForm (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/04 23:42:52 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:19:48 [error] [php] Undefined index: MClientes (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:28:03 [error] [php] Undefined index: MClientes (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:29:49 [error] [php] Undefined index: MClientes (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:31:06 [error] [php] Undefined index: MClientes (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:41:07 [error] [php] Undefined index: MClientes (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (76)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:45:08 [error] [php] Undefined index: MClientes (C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CClientesController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CClientesController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CClientesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CClientesController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\yii\GClientes\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (72)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:52:05 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:52:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre`, `email`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (74)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:52:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre`, `email`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php(74): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CClientesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cClientes/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=cClientes/create
+---
+2017/02/05 03:53:20 [warning] [application] Failed to set unsafe attribute "foto" of "MClientes".
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (73)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:53:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre`, `email`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php (74)
+in C:\xampp\htdocs\yii\GClientes\index.php (13)
+2017/02/05 03:53:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `clientes` (`cedula`, `nombre`, `email`, `fecha`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\yii\GClientes\protected\controllers\CClientesController.php(74): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CClientesController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cClientes/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\GClientes\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/GClientes/index.php?r=cClientes/create
+HTTP_REFERER=http://localhost:8081/yii/GClientes/index.php?r=cClientes/create
+---
