@@ -11,7 +11,12 @@ $this->menu=array(
 	array('label'=>'Administrar Clientes', 'url'=>array('admin')),
 );
 ?>
-
+  <style type="text/css">
+   a{
+   	color: #FFCC00;
+   	text-decoration: underline;
+   }
+   </style>
 <h1>Clientes</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(

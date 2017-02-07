@@ -63,22 +63,21 @@ class CClientesController extends Controller
 	public function actionCreate()
 	{
 		$model=new MClientes;
-		$mensaje='no hay archivos';
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		
 		if(isset($_POST['MClientes']))
 		{	
-			
+			/*
 			
 			if(isset($_FILES))
 			{
-				$destino='C:\xampp\htdocs\yii\GClientes\images';
+				$destino='/xampp/htdocs/yii/GClientes/images/';
 				$model->foto=CUploadedFile::getInstance($model, 'foto');
 				
-				if (copy($_FILES['MClientes']['tmp_name']['foto'], $destino.
-					$_FILES['MClientes']['name']['foto'])) 
+				if (move_uploaded_file($_FILES['foto']['tmp_name'], $destino.
+					$_FILES['foto']['name'])) 
 				{
 					$mensaje='voy bien';
 				}
@@ -87,17 +86,16 @@ class CClientesController extends Controller
 				#$model->foto= CUploadedFile::getInstance($model, 'foto');				
 				
 				
-			}
-
+			}*/
 			
-			#$model->attributes=$_POST['MClientes'];
-			#if($model->save())
-			#	$this->redirect(array('view','id'=>$model->cedula));
+			$model->attributes=$_POST['MClientes'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->cedula));
+			
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
-			'mensaje'=>$mensaje,
+			'model'=>$model
 		));
 	}
 
@@ -121,7 +119,7 @@ class CClientesController extends Controller
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
+			'model'=>$model
 		));
 	}
 

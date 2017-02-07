@@ -3,16 +3,24 @@
 /* @var $model MClientes */
 
 $this->breadcrumbs=array(
-	'Clientes'=>array('Inicio'),
+	'Clientes'=>array('index'),
 	'Nuevo',
 );
 
 $this->menu=array(
 	array('label'=>'Listar Clientes', 'url'=>array('index')),
 	array('label'=>'Administrar Clientes', 'url'=>array('admin')),
-);
-?>
+);?>
 
-<h1>Ingresar Nuevo Cliente</h1>
+<div class="form">
 
-<?php $this->renderPartial('_form', array('model'=>$model,'mensaje'=>$mensaje)); ?>
+
+ <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Ingresar Nuevo Cliente</h3>
+            </div>
+            <!-- /.box-header -->
+
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>

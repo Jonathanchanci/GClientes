@@ -12,6 +12,7 @@
 {
 	background: white;
 	border-collapse: collapse;
+	border-spacing: 0;
 	width: 100%;
 	border: 1px #D0E3EF solid;
 }

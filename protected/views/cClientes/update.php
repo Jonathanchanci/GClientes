@@ -16,6 +16,15 @@ $this->menu=array(
 );
 ?>
 
-<h1>Editar Cliente <?php echo $model->cedula; ?></h1>
+<div class="form">
+
+
+ <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Editar Cliente</h3>
+            </div>
+            <!-- /.box-header -->
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
