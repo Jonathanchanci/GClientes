@@ -17,6 +17,8 @@ $this->menu=array(
 ?>
 
 <h1>Detalle de Cliente CC <?php echo $model->cedula; ?></h1>
+<img src="<?php echo Yii::app()->baseUrl.'/images/'.$model->foto ?>" width="150" heigth="150">
+	<br />
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

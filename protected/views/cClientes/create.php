@@ -15,4 +15,4 @@ $this->menu=array(
 
 <h1>Ingresar Nuevo Cliente</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,'mensaje'=>$mensaje)); ?>

@@ -63,20 +63,41 @@ class CClientesController extends Controller
 	public function actionCreate()
 	{
 		$model=new MClientes;
+		$mensaje='no hay archivos';
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['MClientes']))
 		{	
-						
-			$model->attributes=$_POST['MClientes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->cedula));
+			
+			
+			if(isset($_FILES))
+			{
+				$destino='C:\xampp\htdocs\yii\GClientes\images';
+				$model->foto=CUploadedFile::getInstance($model, 'foto');
+				
+				if (copy($_FILES['MClientes']['tmp_name']['foto'], $destino.
+					$_FILES['MClientes']['name']['foto'])) 
+				{
+					$mensaje='voy bien';
+				}
+								
+				
+				#$model->foto= CUploadedFile::getInstance($model, 'foto');				
+				
+				
+			}
+
+			
+			#$model->attributes=$_POST['MClientes'];
+			#if($model->save())
+			#	$this->redirect(array('view','id'=>$model->cedula));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
+			'mensaje'=>$mensaje,
 		));
 	}
 

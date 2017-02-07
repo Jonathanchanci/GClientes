@@ -18,7 +18,8 @@
 			'clientOptions'=>array(
 				'validateOnSubmit'=> true,
 				'validateOnChange'=>true,
-				'validateOnType'=>true
+				'validateOnType'=>true,
+				'htmlOptions' => array('enctype' => 'multipart/form-data'),
 				)
 )); ?>
 
@@ -58,7 +59,9 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Actualizar'); ?>
+		<?php echo $mensaje; ?>
 	</div>
+
 
 <?php $this->endWidget(); ?>
 

@@ -68,7 +68,7 @@ class MClientes extends CActiveRecord
 			'nombre' => 'Nombre',
 			'email' => 'Email',
 			'fecha' => 'Fecha',
-			'foto' => 'Foto',
+			'foto' => 'Nombre de la Foto',
 		);
 	}
 
