@@ -68,35 +68,34 @@ class CClientesController extends Controller
 		// $this->performAjaxValidation($model);
 		
 		if(isset($_POST['MClientes']))
-		{	
-			/*
-			
-			if(isset($_FILES))
-			{
-				$destino='/xampp/htdocs/yii/GClientes/images/';
-				$model->foto=CUploadedFile::getInstance($model, 'foto');
-				
-				if (move_uploaded_file($_FILES['foto']['tmp_name'], $destino.
-					$_FILES['foto']['name'])) 
-				{
-					$mensaje='voy bien';
-				}
-								
-				
-				#$model->foto= CUploadedFile::getInstance($model, 'foto');				
-				
-				
-			}*/
-			
-			$model->attributes=$_POST['MClientes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->cedula));
-			
-		}
+		{			
 
+				$model->attributes=$_POST['MClientes'];	
+				$imagen=CUploadedFile::getInstance($model,'foto');
+				if (empty($imagen)) {
+					$model->foto='sinfoto.png';
+					if($model->save())	
+						$this->redirect(array('view','id'=>$model->cedula));	
+				}
+				else
+				{
+					$ruta=$imagen->getTempName();
+					$destino='/xampp/htdocs/yii/GClientes/images/';	
+					if ( move_uploaded_file($ruta, $destino.$imagen->getName()) ) {
+
+						  echo "se inserto la foto";
+
+						} else {
+			    			echo "Error al copiar la foto";
+						}				
+					$model->foto=$imagen->getName();
+					if($model->save())	
+						$this->redirect(array('view','id'=>$model->cedula));	
+				}
+		}
 		$this->render('create',array(
-			'model'=>$model
-		));
+				'model'=>$model
+			));
 	}
 
 	/**
@@ -113,9 +112,28 @@ class CClientesController extends Controller
 
 		if(isset($_POST['MClientes']))
 		{
-			$model->attributes=$_POST['MClientes'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->cedula));
+			$model->attributes=$_POST['MClientes'];	
+			$imagen=CUploadedFile::getInstance($model,'foto');
+			if (empty($imagen)) {
+
+				if($model->save())	
+					$this->redirect(array('view','id'=>$model->cedula));	
+			}
+			else
+			{
+				$ruta=$imagen->getTempName();
+				$destino='/xampp/htdocs/yii/GClientes/images/';	
+				if ( move_uploaded_file($ruta, $destino.$imagen->getName()) ) {
+
+					  echo "se inserto la foto";
+
+					} else {
+		    			echo "Error al copiar la foto";
+					}				
+				$model->foto=$imagen->getName();
+				if($model->save())	
+					$this->redirect(array('view','id'=>$model->cedula));	
+			}
 		}
 
 		$this->render('update',array(

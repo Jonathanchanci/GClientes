@@ -11,10 +11,12 @@ $this->menu=array(
 	array('label'=>'Listar Clientes', 'url'=>array('index')),
 	array('label'=>'Administrar Clientes', 'url'=>array('admin')),
 );?>
-
+<style type="text/css">
+  .help-block{
+    color: red;
+  }
+</style>
 <div class="form">
-
-
  <div class="col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">

@@ -15,7 +15,7 @@
 
 
 	<!-- search-form -->
-
+<div style="overflow-x: auto; ">
     <div class="box box-info">
         <div class="box-header with-border">
               <h3 class="box-title">Consulte perzonalizadamente</h3>
@@ -89,5 +89,6 @@
               <!-- /.box-footer -->
             </form>
     </div>
+</div>
         <?php $this->endWidget(); ?>
 </div>

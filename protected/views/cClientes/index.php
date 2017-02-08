@@ -23,3 +23,5 @@ $this->menu=array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+
+<h6 style="padding-bottom: 250px;">&nbsp;</h6>

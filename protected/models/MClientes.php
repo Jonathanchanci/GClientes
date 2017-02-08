@@ -31,19 +31,20 @@ class MClientes extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			#validar nombre
-			array('nombre','required','message'=>'Este campo es requerido'),
+			array('nombre','required','message'=>'El nombre es requerido'),
 			array('nombre','length','max'=>50,'tooLong'=>'Maximo 50 Carecteres'),
 			#validar cedula
-			array('cedula','required','message'=>'Este campo es requerido'),
-			array('cedula','match','pattern'=>'/^[0-9]+$/','message'=>'se requieren solo numeros'),
+			array('cedula','required','message'=>'La cedula es requerida'),
+			array('cedula','match','pattern'=>'/^[0-9]+$/','message'=>'Se requieren solo numeros'),
 			#validar email
-			array('email','required','message'=>'Este campo es requerido'),
+			array('email','required','message'=>'El correo es requerido'),
 			array('email','email','message'=>'Correo incorrecto'),
 			#validar fecha
-			array('fecha','required','message'=>'Este campo es requerido'),
+			array('fecha','required','message'=>'Su fecha de cumpleaños es requerida'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('cedula, nombre, email, fecha, foto', 'safe', 'on'=>'search')
+			array('cedula, nombre, email, fecha, foto', 'safe', 'on'=>'search'),
+			
 		);
 	}
 

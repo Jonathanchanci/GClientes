@@ -7,6 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="language" content="es">
   <title><?php echo CHtml::encode($this->pageTitle); ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -24,6 +25,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   -->
   <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/dist/css/skins/skin-blue.min.css">
 
+  <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/b32de733/jquery.js"></script>
+  <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/b32de733/jquery.yii.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -139,8 +142,10 @@ desired effect
 
     <!-- Main content -->
     
-
-    <?php echo $content; ?>
+    <div class="content">
+      <?php echo $content; ?>      
+    </div>
+    
 
     
     <!-- /.content -->
@@ -151,10 +156,10 @@ desired effect
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Anything you want
+      Prueba Practica Yii Framework
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2017 <a href="#">MOOGO S.A.S</a>.</strong> Hecha por Jonathan Chanci
   </footer>
 
 

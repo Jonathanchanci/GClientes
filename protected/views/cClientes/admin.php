@@ -14,7 +14,7 @@ $this->menu=array(
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
-	$('.search-form').toggle();
+	$('.search-form').toggle(1000);
 	return false;
 });
 $('.search-form form').submit(function(){
@@ -25,7 +25,7 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-<div style="padding-left: 10px;padding-right: 10px;">
+
 	<h1>Administración de Clientes</h1>
 
 	<!--<p>
@@ -58,4 +58,11 @@ $('.search-form form').submit(function(){
 	),
 )); ?>
 
-</div>
+
+
+
+
+
+
+
+
