@@ -12,7 +12,7 @@ $this->menu=array(
 	array('label'=>'Listar Clientes', 'url'=>array('index')),
 	array('label'=>'Crear Cliente', 'url'=>array('create')),
 	array('label'=>'Editar Cliente', 'url'=>array('update', 'id'=>$model->cedula)), 
-  array('label'=>'Eliminar Cliente', 'url'=>"#", 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'En realidad desea eliminarlo?')),
+  array('label'=>'Eliminar Cliente', 'url'=>array('delete', 'id'=>$model->cedula),'linkOptions'=>array('submit'=>array('delete','id'=>$model->cedula),'confirm'=>'En realidad desea eliminarlo?')),
 	array('label'=>'Administrar Clientes', 'url'=>array('admin')),
 );
 ?>
