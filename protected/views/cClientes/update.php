@@ -15,7 +15,11 @@ $this->menu=array(
 	array('label'=>'Administrar Clientes', 'url'=>array('admin')),
 );
 ?>
-
+<style type="text/css">
+  .help-block{
+    color: red;
+  }
+</style>
 <div class="form">
 
 

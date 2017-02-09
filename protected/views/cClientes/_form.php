@@ -25,7 +25,6 @@
 
             <!-- form start -->
             
-
               <div class="box-body">
               <p class="note">Campos con <span class="required">*</span> son requeridos.</p>
               <!--mostrar foto mini-->
